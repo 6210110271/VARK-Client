@@ -63,7 +63,7 @@ export default function Header({ open, onDrawerOpen }: HeaderProp) {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" noWrap component="div">
-          สื่อการเรียนการสอน  (TS) V.{process.env.REACT_APP_VERSION}
+          VARK   (TS) V.{process.env.REACT_APP_VERSION}
         </Typography>
 
         <Box sx={{ flexGrow: 1 }} />

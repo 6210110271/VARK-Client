@@ -15,7 +15,7 @@ const LessonPage = () => {
           <Card sx={{ maxWidth: 600 }}>
             <CardMedia
               sx={{ height: 140 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image="https://t3.ftcdn.net/jpg/03/10/63/18/360_F_310631834_78nhBTepfRQVCKfbNwtvxd9nOFDGJzfG.jpg"
               title="green iguana"
             />
             <CardContent>
@@ -23,8 +23,7 @@ const LessonPage = () => {
                 เรียนรู้การอ่าน
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                โหมดเรียนรู้การอ่านจะประกอบไปด้วย เนื้อหา บทที่ 1 และ 2 จากหนักสือแนวทางการพัฒนาการเรียนรู้สำหรับนักเรียนที่มีความบกพร่องทางการเรียนรู้เล่มที่ 1
               </Typography>
             </CardContent>
             <CardActions>
@@ -39,7 +38,7 @@ const LessonPage = () => {
           <Card sx={{ maxWidth: 600 }}>
             <CardMedia
               sx={{ height: 140 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image="https://media.istockphoto.com/id/91816438/photo/cartoon-writer-or-businessmen-writing.jpg?s=1024x1024&w=is&k=20&c=f3EowlQtAWo8I-NG8R-XdlnBmeziLTDWoYVzg2uaHz0="
               title="green iguana"
             />
             <CardContent>
@@ -47,8 +46,7 @@ const LessonPage = () => {
                 เรียนรู้การเขียน
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                โหมดเรียนรู้การเขียนจะประกอบไปด้วย เนื้อหา บทที่ 1 และ 2 จากหนักสือแนวทางการพัฒนาการเรียนรู้สำหรับนักเรียนที่มีความบกพร่องทางการเรียนรู้เล่มที่ 1
               </Typography>
             </CardContent>
             <CardActions>
