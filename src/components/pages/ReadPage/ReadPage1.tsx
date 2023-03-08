@@ -15,22 +15,29 @@ export default function ReadPage1() {
 
   const images = [
     {
-      image: `${process.env.PUBLIC_URL}/images/a.JPG`,
-      sound: `${process.env.PUBLIC_URL}/sound/num1.mp3`,
-      image2: `${process.env.PUBLIC_URL}/images/h.JPG`,
-
+      image: `${process.env.PUBLIC_URL}/images/a1.1.png`,
+      image2: `${process.env.PUBLIC_URL}/images/a1.2.png`,
+      sound: `${process.env.PUBLIC_URL}/sound/a1.3.mp3`,
     },
     {
-      image: `${process.env.PUBLIC_URL}/images/b.JPG`,
-      sound: `${process.env.PUBLIC_URL}/sound/num2.mp3`,
-      image2: `${process.env.PUBLIC_URL}/images/c.JPG`,
-
+      image: `${process.env.PUBLIC_URL}/images/a2.1.png`,
+      image2: `${process.env.PUBLIC_URL}/images/a2.2.png`,
+      sound: `${process.env.PUBLIC_URL}/sound/a2.3.mp3`,
     },
     {
-      image: `${process.env.PUBLIC_URL}/images/c.JPG`,
-      sound: `${process.env.PUBLIC_URL}/sound/num3.mp3`,
-      image2: `${process.env.PUBLIC_URL}/images/a.JPG`,
-
+      image: `${process.env.PUBLIC_URL}/images/a3.1.png`,
+      image2: `${process.env.PUBLIC_URL}/images/a3.2.png`,
+      sound: `${process.env.PUBLIC_URL}/sound/a3.3.mp3`,
+    },
+    {
+      image: `${process.env.PUBLIC_URL}/images/a4.1.png`,
+      image2: `${process.env.PUBLIC_URL}/images/a4.2.png`,
+      sound: `${process.env.PUBLIC_URL}/sound/a4.3.mp3`,
+    },
+    {
+      image: `${process.env.PUBLIC_URL}/images/a5.1.png`,
+      image2: `${process.env.PUBLIC_URL}/images/a5.2.png`,
+      sound: `${process.env.PUBLIC_URL}/sound/a5.3.mp3`,
     },
   ];
 
@@ -85,7 +92,7 @@ export default function ReadPage1() {
 
       <CardContent sx={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, display: "flex", justifyContent: "center", alignItems: "center" }}>
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        
+
           <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
           <Typography variant="h5" sx={{ flexGrow: 1, textAlign: 'center' }}>
               Score: {score}
@@ -112,7 +119,7 @@ export default function ReadPage1() {
               <CardMedia
                 component="img"
                 sx={{ width: 151 }}
-                image={images[imageIndex].image2}
+                image={images[imageIndex].image}
                 alt="Live from space album cover"
               />
             </Grid>

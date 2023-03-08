@@ -16,7 +16,7 @@ const LessonPage = () => {
           <Card sx={{ maxWidth: 600 }}>
             <CardMedia
               sx={{ height: 140 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image="../images/game/bg1.png"
               title="green iguana"
             />
             <CardContent>
@@ -24,13 +24,12 @@ const LessonPage = () => {
                 เกมจับภาพคู่กับตัวอักษร
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                เป็นโหมดเกมจับคู่ภาพกับตัวอักษร โดยมีเวลานับถอยหลัง
               </Typography>
             </CardContent>
             <CardActions>
             <Button size="small" onClick={() => navigate("/ep-1")} > <Typography variant="h6">Ep 1</Typography></Button>
-              <Button size="small" onClick={() => navigate("/**")} > <Typography variant="h6">Ep 2</Typography></Button>
+              <Button size="small" onClick={() => navigate("/ep-2")} > <Typography variant="h6">Ep 2</Typography></Button>
               <Button size="small" onClick={() => navigate("/**")} > <Typography variant="h6">Ep 3</Typography></Button>
             </CardActions>
           </Card>
@@ -40,7 +39,7 @@ const LessonPage = () => {
           <Card sx={{ maxWidth: 600 }}>
             <CardMedia
               sx={{ height: 140 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image="../images/game/bg2.png"
               title="green iguana"
             />
             <CardContent>
@@ -48,8 +47,7 @@ const LessonPage = () => {
                 เกมจับคู่ตัวอักษร
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                เป็นโหมดเกมจับคู่ตัวอักษรที่มีความเหมือนกัน โดยมีเวลานับถอยหลัง
               </Typography>
             </CardContent>
             <CardActions>
