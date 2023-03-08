@@ -26,6 +26,8 @@ const images = [
   `${process.env.PUBLIC_URL}/images/draw1.png`,
   `${process.env.PUBLIC_URL}/images/draw2.png`,
   `${process.env.PUBLIC_URL}/images/draw3.png`,
+  `${process.env.PUBLIC_URL}/images/draw4.png`,
+  `${process.env.PUBLIC_URL}/images/draw5.png`,
 ];
 
 const WritePage1 = () => {
