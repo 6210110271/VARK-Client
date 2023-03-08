@@ -51,9 +51,9 @@ const LessonPage = () => {
             </CardContent>
             <CardActions>
 
-              <Button size="small" onClick={() => navigate("/stage1")} > <Typography variant="h6">บทที่ 1</Typography></Button>
-              <Button size="small" onClick={() => navigate("/stage2")} > <Typography variant="h6">บทที่ 2</Typography></Button>
-              <Button size="small" onClick={() => navigate("/stage3")} > <Typography variant="h6">บทที่ 3</Typography></Button>
+              <Button size="small" onClick={() => navigate("/write-ep1")} > <Typography variant="h6">บทที่ 1</Typography></Button>
+              <Button size="small" onClick={() => navigate("/write-ep2")} > <Typography variant="h6">บทที่ 2</Typography></Button>
+              <Button size="small" onClick={() => navigate("/write-ep3")} > <Typography variant="h6">บทที่ 3</Typography></Button>
             </CardActions>
           </Card>
         </Grid>

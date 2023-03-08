@@ -92,7 +92,7 @@ export default function ReadPage1() {
 
       <CardContent sx={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, display: "flex", justifyContent: "center", alignItems: "center" }}>
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        
+
           <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
           <Typography variant="h5" sx={{ flexGrow: 1, textAlign: 'center' }}>
               Score: {score}
@@ -119,7 +119,7 @@ export default function ReadPage1() {
               <CardMedia
                 component="img"
                 sx={{ width: 151 }}
-                image={images[imageIndex].image2}
+                image={images[imageIndex].image}
                 alt="Live from space album cover"
               />
             </Grid>
