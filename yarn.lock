@@ -8529,13 +8529,6 @@ react-beautiful-dnd@13.1.0:
     redux "^4.0.4"
     use-memo-one "^1.1.1"
 
-react-card-memory-game@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/react-card-memory-game/-/react-card-memory-game-1.1.5.tgz#9bf4b570d3bbeb0b7ac1ad124f461446b3e18d7b"
-  integrity sha512-CJePp79O9+NdIq948M9jFFSCStB92++qJCkIQ5VZnB54fTmZZtEXE5gx2AJmKKYdWX4uWPbncjS0DaXt75bnow==
-  dependencies:
-    reactjs-flip-card "^1.0.81"
-
 react-dev-utils@^12.0.1:
   version "12.0.1"
   resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-12.0.1.tgz"
@@ -8789,11 +8782,6 @@ react@^18.2.0:
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
-
-reactjs-flip-card@^1.0.81:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/reactjs-flip-card/-/reactjs-flip-card-1.1.2.tgz#8ce37b74de5ffb462febd1ddeea1d6b4d82ee44d"
-  integrity sha512-iNIInrvjUbZd9SO74GdAVFNv9hUFUvAjjfXeXbwFgiRRdq8VFuGeOqa0UGD3tY9ACl82XHjG1JWTna+JV8+zVQ==
 
 read-cache@^1.0.0:
   version "1.0.0"

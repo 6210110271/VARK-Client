@@ -15,22 +15,22 @@ interface Item {
 
 function GameEp1() {
   const [items, setItems] = useState<Item[]>([
-    { id: 1, img: `${process.env.PUBLIC_URL}/images/a.JPG`, stat: '', clicked: false },
-    { id: 1, img: `${process.env.PUBLIC_URL}/images/a.JPG`, stat: '', clicked: false },
-    { id: 2, img: `${process.env.PUBLIC_URL}/images/b.JPG`, stat: '', clicked: false },
-    { id: 2, img: `${process.env.PUBLIC_URL}/images/b.JPG`, stat: '', clicked: false },
-    { id: 3, img: `${process.env.PUBLIC_URL}/images/c.JPG`, stat: '', clicked: false },
-    { id: 3, img: `${process.env.PUBLIC_URL}/images/c.JPG`, stat: '', clicked: false },
-    { id: 4, img: `${process.env.PUBLIC_URL}/images/d.JPG`, stat: '', clicked: false },
-    { id: 4, img: `${process.env.PUBLIC_URL}/images/d.JPG`, stat: '', clicked: false },
-    { id: 5, img: `${process.env.PUBLIC_URL}/images/e.JPG`, stat: '', clicked: false },
-    { id: 5, img: `${process.env.PUBLIC_URL}/images/e.JPG`, stat: '', clicked: false },
-    { id: 6, img: `${process.env.PUBLIC_URL}/images/f.JPG`, stat: '', clicked: false },
-    { id: 6, img: `${process.env.PUBLIC_URL}/images/f.JPG`, stat: '', clicked: false },
-    { id: 7, img: `${process.env.PUBLIC_URL}/images/g.JPG`, stat: '', clicked: false },
-    { id: 7, img: `${process.env.PUBLIC_URL}/images/g.JPG`, stat: '', clicked: false },
-    { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
-    { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
+    { id: 1, img: `${process.env.PUBLIC_URL}/images/a1.1.png`, stat: '', clicked: false },
+    { id: 1, img: `${process.env.PUBLIC_URL}/images/a1.2.png`, stat: '', clicked: false },
+    { id: 2, img: `${process.env.PUBLIC_URL}/images/a2.1.png`, stat: '', clicked: false },
+    { id: 2, img: `${process.env.PUBLIC_URL}/images/a2.2.png`, stat: '', clicked: false },
+    { id: 3, img: `${process.env.PUBLIC_URL}/images/a3.1.png`, stat: '', clicked: false },
+    { id: 3, img: `${process.env.PUBLIC_URL}/images/a3.2.png`, stat: '', clicked: false },
+    { id: 4, img: `${process.env.PUBLIC_URL}/images/a4.1.png`, stat: '', clicked: false },
+    { id: 4, img: `${process.env.PUBLIC_URL}/images/a4.2.png`, stat: '', clicked: false },
+    { id: 5, img: `${process.env.PUBLIC_URL}/images/a5.1.png`, stat: '', clicked: false },
+    { id: 5, img: `${process.env.PUBLIC_URL}/images/a5.2.png`, stat: '', clicked: false },
+    // { id: 6, img: `${process.env.PUBLIC_URL}/images/f.JPG`, stat: '', clicked: false },
+    // { id: 6, img: `${process.env.PUBLIC_URL}/images/f.JPG`, stat: '', clicked: false },
+    // { id: 7, img: `${process.env.PUBLIC_URL}/images/g.JPG`, stat: '', clicked: false },
+    // { id: 7, img: `${process.env.PUBLIC_URL}/images/g.JPG`, stat: '', clicked: false },
+    // { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
+    // { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
   ].sort(() => Math.random() - 0.5));
 
 

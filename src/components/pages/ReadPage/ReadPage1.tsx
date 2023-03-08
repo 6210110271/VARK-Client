@@ -15,16 +15,29 @@ export default function ReadPage1() {
 
   const images = [
     {
-      image: `${process.env.PUBLIC_URL}/images/a.JPG`,
-      sound: `${process.env.PUBLIC_URL}/sound/num1.mp3`,
+      image: `${process.env.PUBLIC_URL}/images/a1.1.png`,
+      image2: `${process.env.PUBLIC_URL}/images/a1.2.png`,
+      sound: `${process.env.PUBLIC_URL}/sound/a1.3.mp3`,
     },
     {
-      image: `${process.env.PUBLIC_URL}/images/b.JPG`,
-      sound: `${process.env.PUBLIC_URL}/sound/num2.mp3`,
+      image: `${process.env.PUBLIC_URL}/images/a2.1.png`,
+      image2: `${process.env.PUBLIC_URL}/images/a2.2.png`,
+      sound: `${process.env.PUBLIC_URL}/sound/a2.3.mp3`,
     },
     {
-      image: `${process.env.PUBLIC_URL}/images/c.JPG`,
-      sound: `${process.env.PUBLIC_URL}/sound/num3.mp3`,
+      image: `${process.env.PUBLIC_URL}/images/a3.1.png`,
+      image2: `${process.env.PUBLIC_URL}/images/a3.2.png`,
+      sound: `${process.env.PUBLIC_URL}/sound/a3.3.mp3`,
+    },
+    {
+      image: `${process.env.PUBLIC_URL}/images/a4.1.png`,
+      image2: `${process.env.PUBLIC_URL}/images/a4.2.png`,
+      sound: `${process.env.PUBLIC_URL}/sound/a4.3.mp3`,
+    },
+    {
+      image: `${process.env.PUBLIC_URL}/images/a5.1.png`,
+      image2: `${process.env.PUBLIC_URL}/images/a5.2.png`,
+      sound: `${process.env.PUBLIC_URL}/sound/a5.3.mp3`,
     },
   ];
 
@@ -106,7 +119,7 @@ export default function ReadPage1() {
               <CardMedia
                 component="img"
                 sx={{ width: 151 }}
-                image={images[imageIndex].image}
+                image={images[imageIndex].image2}
                 alt="Live from space album cover"
               />
             </Grid>
