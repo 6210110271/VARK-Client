@@ -17,14 +17,20 @@ export default function ReadPage1() {
     {
       image: `${process.env.PUBLIC_URL}/images/a.JPG`,
       sound: `${process.env.PUBLIC_URL}/sound/num1.mp3`,
+      image2: `${process.env.PUBLIC_URL}/images/h.JPG`,
+
     },
     {
       image: `${process.env.PUBLIC_URL}/images/b.JPG`,
       sound: `${process.env.PUBLIC_URL}/sound/num2.mp3`,
+      image2: `${process.env.PUBLIC_URL}/images/c.JPG`,
+
     },
     {
       image: `${process.env.PUBLIC_URL}/images/c.JPG`,
       sound: `${process.env.PUBLIC_URL}/sound/num3.mp3`,
+      image2: `${process.env.PUBLIC_URL}/images/a.JPG`,
+
     },
   ];
 
@@ -106,7 +112,7 @@ export default function ReadPage1() {
               <CardMedia
                 component="img"
                 sx={{ width: 151 }}
-                image={images[imageIndex].image}
+                image={images[imageIndex].image2}
                 alt="Live from space album cover"
               />
             </Grid>
