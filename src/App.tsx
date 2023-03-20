@@ -16,15 +16,12 @@ import ProtectedRoutes from "./router/protected.routes";
 import LoginPage from "./components/pages/LoginPage";
 import RegisterPage from "./components/pages/RegisterPage";
 import DashbordPage from "./components/pages/DashboardPage";
-import LessonPage from "./components/pages/LessonPage";
 import MemberPage from "./components/pages/MemberPage";
 import InformationPage from "./components/pages/InformationPage";
 import ScorePage from "./components/pages/ScorePage";
 import GamePage from "./components/pages/GamePage";
 import { GameEp1, GameEp2 } from "./components/pages/GameEp";
 import BoardGamePage from "./components/pages/GameEp/BoardGamePage";
-import { ReadPage1, ReadPage2, ReadPage3 } from "./components/pages/ReadPage";
-import { WritePage1 } from "./components/pages/WritePage";
 
 const drawerWidth = 240;
 
@@ -123,21 +120,11 @@ export default function App() {
             {/* Protected routes */}
             <Route path="/" element={<ProtectedRoutes />}>Financial
               <Route path="/dashboard" element={<DashbordPage />} />
-              <Route path="/lesson" element={<LessonPage />} />
               <Route path="/members" element={<MemberPage />} />
               <Route path="/info" element={<InformationPage />} />
               <Route path="/score" element={<ScorePage />} />
               <Route path="/games" element={<GamePage />} />
-              <Route path="/boardgame" element={<BoardGamePage />} />
-
-              <Route path="/read-ep1" element={<ReadPage1 />} />
-              <Route path="/read-ep2" element={<ReadPage2 />} />
-              <Route path="/read-ep3" element={<ReadPage3 />} />
-
-              <Route path="/write-ep1" element={<WritePage1 />} />
-
-
-              
+              <Route path="/boardgame" element={<BoardGamePage />} /> 
               <Route path="/ep-1" element={<GameEp1 />} />
               <Route path="/ep-2" element={<GameEp2 />} />
 

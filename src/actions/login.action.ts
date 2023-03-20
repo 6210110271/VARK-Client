@@ -40,6 +40,8 @@ export const login = (user: User_login, navigate: any) => {
           localStorage.setItem(TOKEN, result.data.token!);
           localStorage.setItem("userId", result.data.userId!);
           localStorage.setItem("role", result.data.role!);
+          localStorage.setItem("username", result.data.username!);
+          localStorage.setItem("dob", result.data.dob!);
 
           dispatch(setLoginSuccessToState(result.data));
           alert("Login Successfully");
@@ -60,8 +62,10 @@ export const restoreLogin = () => {
     const token = localStorage.getItem(TOKEN);
     const userId = localStorage.getItem("userId");
     const role = localStorage.getItem("role");
+    const username = localStorage.getItem("username");
+    const dob = localStorage.getItem("dob");
 
-    if (token && userId && role) {
+    if (token && userId && role && username && dob) {
       dispatch(
         setLoginSuccessToState({
           result: OK,
@@ -69,6 +73,8 @@ export const restoreLogin = () => {
           userId,
           role,
           message: "Login successfully",
+          username,
+          dob,
         })
       );
     }

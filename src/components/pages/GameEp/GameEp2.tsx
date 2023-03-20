@@ -4,6 +4,11 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { Button } from '@mui/material';
+import { Add_score } from '../../../types/score.type';
+import { RootReducers } from '../../../reducers';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import * as scoreAction from "../../../actions/score.action"
 
 
 interface Item {
@@ -32,6 +37,10 @@ function GameEp2() {
     // { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
     // { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
   ].sort(() => Math.random() - 0.5));
+
+  const dispatch = useDispatch<any>();
+  const scoreReducer = useSelector((state: RootReducers) => state.scoreReducer);
+  const navigate = useNavigate();
 
 
   const [prev, setPrev] = useState(-1);
@@ -112,7 +121,16 @@ function GameEp2() {
   };
 
   const handleSave = () => {
-    // save score
+    let userId = localStorage.getItem("userId");
+    if (userId) {
+      const newScore: Add_score = {
+        score: score,
+        userId: userId,
+        gameEp: "ep1"
+      };
+
+      dispatch(scoreAction.addScore(newScore,navigate));
+    }
   };
 
   return (

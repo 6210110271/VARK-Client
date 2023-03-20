@@ -72,13 +72,22 @@ export default function Menu({ open, onDrawerClose }: MenuProp) {
   }
 
   const menuList = () => {
-    return [
-      { to: "/dashboard", icon: <DashboardIcon />, text: "หน้าแรก" },
-      { to: "/lesson", icon: <LessonIcon />, text: "บทเรียน" },
-      { to: "/members", icon: <MembersIcon />, text: "จัดการสมาชิก" },
-      { to: "/info", icon: <InfoIcon />, text: "ข้อมูล" },
-      { to: "/score", icon: <ScoreIcon />, text: "ข้อมูลคะแนน" },
-    ];
+
+    let role = localStorage.getItem("role");
+
+    if (role === "user") {
+      return [
+        { to: "/dashboard", icon: <DashboardIcon />, text: "หน้าแรก" },
+        { to: "/info", icon: <InfoIcon />, text: "ข้อมูล" },
+      ];
+    } else {
+      return [
+        { to: "/members", icon: <MembersIcon />, text: "จัดการสมาชิก" },
+        { to: "/score", icon: <ScoreIcon />, text: "ข้อมูลคะแนน" },
+      ];
+    }
+
+
   };
 
 
@@ -125,19 +134,7 @@ export default function Menu({ open, onDrawerClose }: MenuProp) {
         ))}
       </List>
       <Divider />
-      {/* {menuListV2(role).map((item) => (
-        <ListItem
-          button
-          key={item.to}
-          to={item.to}
-          component={MyNavLink}
-          activeClassName="Mui-selected"
-          exact
-        >
-          <ListItemIcon>{item.icon}</ListItemIcon>
-          <ListItemText primary={item.text} />
-        </ListItem>
-      ))} */}
+
     </Drawer>
   );
 }

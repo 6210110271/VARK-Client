@@ -54,7 +54,7 @@ const DashboardPage = () => {
     <div className={classes.root}>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
-          <Link to="/lesson" className={classes.button}>
+          <Link to="https://project-vark.netlify.app/?fbclid=IwAR0wbeE51wz72VTDMyKCN9tmgvdlxkzr7pATqqwzD6irmMbKTiOjg9GGarc#/" className={classes.button}>
             <Button
               variant="contained"
               className={classes.card}

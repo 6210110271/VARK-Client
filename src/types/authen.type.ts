@@ -4,6 +4,8 @@ export interface LoginResult {
   token?: string;
   message: string;
   role: string
+  username: string
+  dob: string
 }
 
 export interface RegisterResult {

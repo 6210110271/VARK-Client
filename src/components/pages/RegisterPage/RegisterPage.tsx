@@ -38,12 +38,46 @@ const RegisterPage: React.FC<any> = () => {
           margin="normal"
           required
           fullWidth
+          id="firstname"
+          label="ชื่อ"
+          onChange={handleChange}
+          value={values.firstname}
+          autoFocus
+        />
+        <TextField
+          variant="outlined"
+          margin="normal"
+          required
+          fullWidth
+          id="lastname"
+          label="นามสกุล"
+          onChange={handleChange}
+          value={values.lastname}
+          autoFocus
+        />
+        <TextField
+          variant="outlined"
+          margin="normal"
+          required
+          fullWidth
+          id="dob"
+          label="วัน/เดือน/ปีเกิด"
+          onChange={handleChange}
+          value={values.dob}
+          autoFocus
+        />
+        <TextField
+          variant="outlined"
+          margin="normal"
+          required
+          fullWidth
           id="password"
           label="Password"
           onChange={handleChange}
           value={values.password}
           type="password"
         />
+      
         <br />
 
         {registerReducer.isError && <Alert severity="error">Register failed</Alert>}
@@ -60,7 +94,7 @@ const RegisterPage: React.FC<any> = () => {
     );
   };
 
-  const initialValues: User_regis = { username: "", password: "" };
+  const initialValues: User_regis = { username: "", password: "", firstname: "", lastname: "", dob: "" };
 
   return (
     <>

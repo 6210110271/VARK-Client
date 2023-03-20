@@ -2,40 +2,28 @@ import MaterialTable from "material-table";
 import * as React from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import { RootReducers } from "../../../reducers";
-// import * as historyAction from "../../../actions/history.action"
+import * as scoreAction from "../../../actions/score.action"
 
 
 const ScorePage: React.FC<any> = () => {
   const dispatch = useDispatch<any>();
-  const historyReducer = useSelector((state: RootReducers) => state.historyReducer);
-  const navigate = useNavigate();
+  const scoreReducer = useSelector((state: RootReducers) => state.scoreReducer);
 
-  let userId = localStorage.getItem("userId")
 
   React.useEffect(() => {
-    if (userId) {
-      // dispatch(historyAction.loadAccount(userId));
-    }
+    dispatch(scoreAction.loadScore());
+
   }, []);
-
-  const handleRowDelete = (oldData: any, resolve: any) => {
-    // dispatch(accountAction.deleteAccount(oldData.accountId));
-    resolve();
-  };
-
 
   const [columns, setColumns] = useState<any>([
     { title: "ลำดับที่", field: "userId", type: "numeric", editable: 'never' },
     {
       title: "ชื่อ - นามสกุล",
-      field: "fullname",
+      field: "fullName",
       type: "string"
     },
     { title: "เกมจับคู่ตัวอักษร", field: "score", type: "numeric" as const },
-    { title: "เกมจับคู่ภาพกับตัวอักษร", field: "score", type: "numeric" as const, editable: 'never' },
-    { title: "วันที่", field: "updateDate", type: "numeric" as const, editable: 'never' },
 
   ]);
 
@@ -43,13 +31,7 @@ const ScorePage: React.FC<any> = () => {
     <MaterialTable
       title="ข้อมูลคะแนน"
       columns={columns}
-      data={historyReducer.result}
-      // editable={{
-      //   onRowDelete: (oldData: any) =>
-      //     new Promise((resolve) => {
-      //       handleRowDelete(oldData, resolve);
-      //     }),
-      // }}
+      data={scoreReducer.result}
     />
   );
 };

@@ -1,23 +1,19 @@
 import { combineReducers } from "redux";
 import registerReducer, { RegisterState } from "./register.reducer";
 import loginReducer, { LoginState } from "./login.reducer";
-import accountReducer, { AccountState } from "./account.reducer";
-import historyReducer, { HistoryState } from "./history.reducer";
-import contactReducer, { ContactState } from "./contact.reducer";
+import scoreReducer, {ScoreState} from "./score.reducer";
+import userReducer, {UserState} from "./user.reducer";
 
 export default combineReducers({
   registerReducer,
   loginReducer,
-  accountReducer,
-  historyReducer,
-  contactReducer
+  scoreReducer,
+  userReducer
 });
 
 export interface RootReducers {
   registerReducer: RegisterState;
   loginReducer: LoginState;
-  accountReducer: AccountState;
-  historyReducer: HistoryState;
-  contactReducer: ContactState;
-
+  scoreReducer: ScoreState;
+  userReducer: UserState;
 }

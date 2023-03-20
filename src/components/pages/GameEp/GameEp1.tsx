@@ -4,6 +4,11 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { Button } from '@mui/material';
+import * as scoreAction from "../../../actions/score.action"
+import { useDispatch, useSelector } from "react-redux";
+import { RootReducers } from '../../../reducers';
+import { useNavigate } from 'react-router-dom';
+import { Add_score } from '../../../types/score.type';
 
 
 interface Item {
@@ -33,12 +38,20 @@ function GameEp1() {
     // { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
   ].sort(() => Math.random() - 0.5));
 
+ 
+
+  const dispatch = useDispatch<any>();
+  const scoreReducer = useSelector((state: RootReducers) => state.scoreReducer);
+  const navigate = useNavigate();
+
 
   const [prev, setPrev] = useState(-1);
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(120);
   const [gameOver, setGameOver] = useState(false);
-
+  const [scoreReq, setScoreReq] = useState<Add_score>()
+  
+ 
   function check(current: any) {
     if (items[current].id === items[prev].id) {
       items[current].stat = 'correct';
@@ -112,7 +125,16 @@ function GameEp1() {
   };
 
   const handleSave = () => {
-    // save score
+    let userId = localStorage.getItem("userId");
+    if (userId) {
+      const newScore: Add_score = {
+        score: score,
+        userId: userId,
+        gameEp: "ep1"
+      };
+
+      dispatch(scoreAction.addScore(newScore,navigate));
+    }
   };
 
   return (

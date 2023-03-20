@@ -1,18 +1,18 @@
 import {
-    ACCOUNT_CLEAR,
-    ACCOUNT_FAILED,
-    ACCOUNT_FETCHING,
-    ACCOUNT_SUCCESS,
+    SCORE_CLEAR,
+    SCORE_FAILED,
+    SCORE_FETCHING,
+    SCORE_SUCCESS,
   } from "../Constants";
-  import { ACCOUNT_LIST } from "../types/account.type";
+import { Score } from "../types/score.type";
   
-  export interface AccountState {
-    result: ACCOUNT_LIST[];
+  export interface ScoreState {
+    result: any;
     isFetching: boolean;
     isError: boolean;
   }
   
-  const initialState: AccountState = {
+  const initialState: ScoreState = {
     result: [],
     isFetching: false,
     isError: false,
@@ -20,13 +20,13 @@ import {
   
   export default (state = initialState, { type, payload }: any) => {
     switch (type) {
-      case ACCOUNT_FETCHING:
+      case SCORE_FETCHING:
         return { ...state, result: [], isFetching: true, isError: false };
-      case ACCOUNT_SUCCESS:
+      case SCORE_SUCCESS:
         return { ...state, result: payload, isFetching: false, isError: false };
-      case ACCOUNT_FAILED:
+      case SCORE_FAILED:
         return { ...state, result: [], isFetching: false, isError: true };
-      case ACCOUNT_CLEAR:
+      case SCORE_CLEAR:
         return { ...state, result: [], isFetching: false, isError: false };
       default:
         return state;

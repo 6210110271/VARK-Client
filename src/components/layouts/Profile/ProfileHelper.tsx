@@ -6,8 +6,6 @@ import Divider from "@mui/material/Divider";
 interface ProfileProps {
   name: string;
   dateOfBirth: string;
-  score1: number;
-  score2: number;
   score3: number;
 }
 
@@ -32,7 +30,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-const ProfileHelper: React.FC<ProfileProps> = ({ name, dateOfBirth, score1, score2, score3 }) => {
+const ProfileHelper: React.FC<ProfileProps> = ({ name, dateOfBirth, score3 }) => {
   const classes = useStyles();
 
   const calculatePercentage = (score: number): number => {
@@ -53,38 +51,7 @@ const ProfileHelper: React.FC<ProfileProps> = ({ name, dateOfBirth, score1, scor
             <Grid item xs={12}>
               <Typography variant="body1">Date of Birth: {dateOfBirth}</Typography>
             </Grid>
-            <Grid item xs={12}>
-              <Typography variant="body1">ฝึกอ่านออกเสียงพยัญชนะ</Typography>
-              <LinearProgress
-                variant="determinate"
-                value={calculatePercentage(score1)}
-                className={classes.progress}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <Typography variant="body1">ฝึกเขียนพยัญชนะ</Typography>
-              <LinearProgress
-                variant="determinate"
-                value={calculatePercentage(score2)}
-                className={classes.progress}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <Typography variant="body1">ฝึกอ่านออกเสียงสระ</Typography>
-              <LinearProgress
-                variant="determinate"
-                value={calculatePercentage(score3)}
-                className={classes.progress}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <Typography variant="body1">ฝึกเขียนสละ</Typography>
-              <LinearProgress
-                variant="determinate"
-                value={calculatePercentage(score3)}
-                className={classes.progress}
-              />
-            </Grid>
+            
             <Divider />
 
             <Grid item xs={12}>
@@ -93,6 +60,7 @@ const ProfileHelper: React.FC<ProfileProps> = ({ name, dateOfBirth, score1, scor
                 variant="determinate"
                 value={calculatePercentage(score3)}
                 className={classes.progress}
+                style={{width: 450}}
               />
             </Grid>
           </Grid>
