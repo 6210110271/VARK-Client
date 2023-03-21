@@ -34,7 +34,7 @@ const ProfileHelper: React.FC<ProfileProps> = ({ name, dateOfBirth, score3 }) =>
   const classes = useStyles();
 
   const calculatePercentage = (score: number): number => {
-    return (score / 100) * 100;
+    return (score / 26) * 100;
   };
 
   return (

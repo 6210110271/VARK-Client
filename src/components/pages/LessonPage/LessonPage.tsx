@@ -28,7 +28,7 @@ const LessonPage = () => {
             <CardActions>
             
             <Link to="https://project-vark.netlify.app/?fbclid=IwAR0wbeE51wz72VTDMyKCN9tmgvdlxkzr7pATqqwzD6irmMbKTiOjg9GGarc#/" >
-            <Button size="small"> <Typography variant="h6">บทที่ 1</Typography></Button>
+            <Button size="small"> <Typography variant="h6">เริ่มการเรียนรู้โหมดการอ่าน</Typography></Button>
             </Link>
             </CardActions>
           </Card>
