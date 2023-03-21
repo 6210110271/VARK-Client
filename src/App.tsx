@@ -20,7 +20,7 @@ import MemberPage from "./components/pages/MemberPage";
 import InformationPage from "./components/pages/InformationPage";
 import ScorePage from "./components/pages/ScorePage";
 import GamePage from "./components/pages/GamePage";
-import { GameEp1, GameEp2 } from "./components/pages/GameEp";
+import { GameEp1, GameEp2, GameEp3, GameEp4, GameEp5, GameEp6 } from "./components/pages/GameEp";
 import BoardGamePage from "./components/pages/GameEp/BoardGamePage";
 
 const drawerWidth = 240;
@@ -125,8 +125,12 @@ export default function App() {
               <Route path="/score" element={<ScorePage />} />
               <Route path="/games" element={<GamePage />} />
               <Route path="/boardgame" element={<BoardGamePage />} /> 
-              <Route path="/ep-1" element={<GameEp1 />} />
-              <Route path="/ep-2" element={<GameEp2 />} />
+              <Route path="/ep-1.1" element={<GameEp1 />} />
+              <Route path="/ep-1.2" element={<GameEp2 />} />
+              <Route path="/ep-1.3" element={<GameEp3 />} />
+              <Route path="/ep-2.1" element={<GameEp4 />} />
+              <Route path="/ep-2.2" element={<GameEp5 />} />
+              <Route path="/ep-2.3" element={<GameEp6 />} />
 
             </Route>
           </Routes>

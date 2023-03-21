@@ -82,6 +82,8 @@ export default function Menu({ open, onDrawerClose }: MenuProp) {
       ];
     } else {
       return [
+        { to: "/dashboard", icon: <DashboardIcon />, text: "หน้าแรก" },
+        { to: "/info", icon: <InfoIcon />, text: "ข้อมูล" },
         { to: "/members", icon: <MembersIcon />, text: "จัดการสมาชิก" },
         { to: "/score", icon: <ScoreIcon />, text: "ข้อมูลคะแนน" },
       ];

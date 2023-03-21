@@ -21,16 +21,16 @@ const LessonPage = () => {
             />
             <CardContent>
               <Typography variant="h5" component="div">
-                เกมจับภาพคู่กับตัวอักษร
+                เกมจับคู่ภาพกับตัวอักษร
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 เป็นโหมดเกมจับคู่ภาพกับตัวอักษร โดยมีเวลานับถอยหลัง
               </Typography>
             </CardContent>
             <CardActions>
-            <Button size="small" onClick={() => navigate("/ep-1")} > <Typography variant="h6">Ep 1</Typography></Button>
-              <Button size="small" onClick={() => navigate("/ep-2")} > <Typography variant="h6">Ep 2</Typography></Button>
-              <Button size="small" onClick={() => navigate("/**")} > <Typography variant="h6">Ep 3</Typography></Button>
+              <Button size="small" onClick={() => navigate("/ep-1.1")} > <Typography variant="h6">Ep 1</Typography></Button>
+              <Button size="small" onClick={() => navigate("/ep-1.2")} > <Typography variant="h6">Ep 2</Typography></Button>
+              <Button size="small" onClick={() => navigate("/ep-1.3")} > <Typography variant="h6">Ep 3</Typography></Button>
             </CardActions>
           </Card>
         </Grid>
@@ -44,17 +44,17 @@ const LessonPage = () => {
             />
             <CardContent>
               <Typography variant="h5" component="div">
-                เกมจับคู่ตัวอักษร
+                เกมจับคู่
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                เป็นโหมดเกมจับคู่ตัวอักษรที่มีความเหมือนกัน โดยมีเวลานับถอยหลัง
+                เป็นโหมดเกมจับคู่ตัวอักษรและสระที่มีความเหมือนกัน โดยมีเวลานับถอยหลัง
               </Typography>
             </CardContent>
             <CardActions>
 
-              <Button size="small" onClick={() => navigate("/**")} > <Typography variant="h6">Ep 1</Typography></Button>
-              <Button size="small" onClick={() => navigate("/**")} > <Typography variant="h6">Ep 2</Typography></Button>
-              <Button size="small" onClick={() => navigate("/**")} > <Typography variant="h6">Ep 3</Typography></Button>
+              <Button size="small" onClick={() => navigate("/ep-2.1")} > <Typography variant="h6">Ep 1</Typography></Button>
+              <Button size="small" onClick={() => navigate("/ep-2.2")} > <Typography variant="h6">Ep 2</Typography></Button>
+              <Button size="small" onClick={() => navigate("/ep-2.3")} > <Typography variant="h6">Ep 3</Typography></Button>
             </CardActions>
           </Card>
         </Grid>

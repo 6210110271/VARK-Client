@@ -18,16 +18,16 @@ interface Item {
   clicked: boolean;
 }
 
-function GameEp2() {
+function GameEp5() {
   const [items, setItems] = useState<Item[]>([
-    { id: 1, img: `${process.env.PUBLIC_URL}/images/b1.1.png`, stat: '', clicked: false },
-    { id: 1, img: `${process.env.PUBLIC_URL}/images/b1.2.png`, stat: '', clicked: false },
-    { id: 2, img: `${process.env.PUBLIC_URL}/images/b2.1.png`, stat: '', clicked: false },
-    { id: 2, img: `${process.env.PUBLIC_URL}/images/b2.2.png`, stat: '', clicked: false },
-    { id: 3, img: `${process.env.PUBLIC_URL}/images/b3.1.png`, stat: '', clicked: false },
-    { id: 3, img: `${process.env.PUBLIC_URL}/images/b3.2.png`, stat: '', clicked: false },
-    { id: 4, img: `${process.env.PUBLIC_URL}/images/b4.1.png`, stat: '', clicked: false },
-    { id: 4, img: `${process.env.PUBLIC_URL}/images/b4.2.png`, stat: '', clicked: false },
+    { id: 1, img: `${process.env.PUBLIC_URL}/images/b1.1.1.PNG`, stat: '', clicked: false },
+    { id: 1, img: `${process.env.PUBLIC_URL}/images/b1.1.PNG`, stat: '', clicked: false },
+    { id: 2, img: `${process.env.PUBLIC_URL}/images/b2.1.1.PNG`, stat: '', clicked: false },
+    { id: 2, img: `${process.env.PUBLIC_URL}/images/b2.1.PNG`, stat: '', clicked: false },
+    { id: 3, img: `${process.env.PUBLIC_URL}/images/b3.1.1.PNG`, stat: '', clicked: false },
+    { id: 3, img: `${process.env.PUBLIC_URL}/images/b3.1.PNG`, stat: '', clicked: false },
+    { id: 4, img: `${process.env.PUBLIC_URL}/images/b4.1.1.PNG`, stat: '', clicked: false },
+    { id: 4, img: `${process.env.PUBLIC_URL}/images/b4.1.PNG`, stat: '', clicked: false },
     // { id: 5, img: `${process.env.PUBLIC_URL}/images/b5.1.png`, stat: '', clicked: false },
     // { id: 5, img: `${process.env.PUBLIC_URL}/images/b5.2.png`, stat: '', clicked: false },
     // { id: 6, img: `${process.env.PUBLIC_URL}/images/f.JPG`, stat: '', clicked: false },
@@ -126,7 +126,7 @@ function GameEp2() {
       const newScore: Add_score = {
         score: score,
         userId: userId,
-        gameEp: "ep2"
+        gameEp: "ep5"
       };
 
       dispatch(scoreAction.addScore(newScore,navigate));
@@ -175,4 +175,4 @@ function GameEp2() {
   );
 }
 
-export default GameEp2;
+export default GameEp5;
