@@ -28,14 +28,6 @@ function GameEp6() {
     { id: 3, img: `${process.env.PUBLIC_URL}/images/photo-front-3.11.PNG`, stat: '', clicked: false },
     { id: 4, img: `${process.env.PUBLIC_URL}/images/photo-front-3.13.PNG`, stat: '', clicked: false },
     { id: 4, img: `${process.env.PUBLIC_URL}/images/photo-front-3.14.PNG`, stat: '', clicked: false },
-    // { id: 5, img: `${process.env.PUBLIC_URL}/images/b5.1.png`, stat: '', clicked: false },
-    // { id: 5, img: `${process.env.PUBLIC_URL}/images/b5.2.png`, stat: '', clicked: false },
-    // { id: 6, img: `${process.env.PUBLIC_URL}/images/f.JPG`, stat: '', clicked: false },
-    // { id: 6, img: `${process.env.PUBLIC_URL}/images/f.JPG`, stat: '', clicked: false },
-    // { id: 7, img: `${process.env.PUBLIC_URL}/images/g.JPG`, stat: '', clicked: false },
-    // { id: 7, img: `${process.env.PUBLIC_URL}/images/g.JPG`, stat: '', clicked: false },
-    // { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
-    // { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
   ].sort(() => Math.random() - 0.5));
 
   const dispatch = useDispatch<any>();
