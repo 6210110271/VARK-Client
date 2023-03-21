@@ -22,7 +22,7 @@ export const USER_CLEAR = 'USER_CLEAR';
 
 
 
-export const apiUrl = "http://localhost:8080";
+export const apiUrl = "http://localhost:8080"; //add เพิ่ม เปลี่ยน
 // export const imageUrl = "http://localhost:8085";
 
 export const YES = "YES";

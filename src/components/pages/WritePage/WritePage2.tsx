@@ -23,14 +23,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const images = [
-  `${process.env.PUBLIC_URL}/images/draw/1.1.png`,
-  `${process.env.PUBLIC_URL}/images/draw/1.2.png`,
-  `${process.env.PUBLIC_URL}/images/draw/1.3.png`,
-  `${process.env.PUBLIC_URL}/images/draw/1.4.png`,
-  `${process.env.PUBLIC_URL}/images/draw/1.5.png`,
+  `${process.env.PUBLIC_URL}/images/draw/2.1.png`,
+  `${process.env.PUBLIC_URL}/images/draw/2.2.png`,
+  `${process.env.PUBLIC_URL}/images/draw/2.3.png`,
+  `${process.env.PUBLIC_URL}/images/draw/2.4.png`,
 ];
 
-const WritePage1 = () => {
+const WritePage2 = () => {
   const theme = useTheme();
   const classes = useStyles({ spacing: theme.spacing });
 
@@ -120,4 +119,4 @@ const WritePage1 = () => {
   );
 };
 
-export default WritePage1;
+export default WritePage2;
