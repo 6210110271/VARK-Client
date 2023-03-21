@@ -22,8 +22,8 @@ import ScorePage from "./components/pages/ScorePage";
 import GamePage from "./components/pages/GamePage";
 import { GameEp1, GameEp2, GameEp3, GameEp4, GameEp5, GameEp6 } from "./components/pages/GameEp";
 import BoardGamePage from "./components/pages/GameEp/BoardGamePage";
-import LessonPage from "./components/pages/GamePage/GamePage";
 import { WritePage1 } from "./components/pages/WritePage";
+import LessonPage from "./components/pages/LessonPage";
 
 const drawerWidth = 240;
 

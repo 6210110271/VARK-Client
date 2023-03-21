@@ -26,7 +26,10 @@ const LessonPage = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" onClick={() => navigate("https://project-vark.netlify.app/?fbclid=IwAR0wbeE51wz72VTDMyKCN9tmgvdlxkzr7pATqqwzD6irmMbKTiOjg9GGarc#/")} > <Typography variant="h6">บทที่ 1</Typography></Button>
+            
+            <Link to="https://project-vark.netlify.app/?fbclid=IwAR0wbeE51wz72VTDMyKCN9tmgvdlxkzr7pATqqwzD6irmMbKTiOjg9GGarc#/" >
+            <Button size="small"> <Typography variant="h6">บทที่ 1</Typography></Button>
+            </Link>
             </CardActions>
           </Card>
         </Grid>
