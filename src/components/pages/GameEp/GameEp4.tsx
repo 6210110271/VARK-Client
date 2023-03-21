@@ -30,12 +30,6 @@ function GameEp4() {
     { id: 4, img: `${process.env.PUBLIC_URL}/images/a4.1.PNG`, stat: '', clicked: false },
     { id: 5, img: `${process.env.PUBLIC_URL}/images/a5.1.1.PNG`, stat: '', clicked: false },
     { id: 5, img: `${process.env.PUBLIC_URL}/images/a5.1.PNG`, stat: '', clicked: false },
-    // { id: 6, img: `${process.env.PUBLIC_URL}/images/f.JPG`, stat: '', clicked: false },
-    // { id: 6, img: `${process.env.PUBLIC_URL}/images/f.JPG`, stat: '', clicked: false },
-    // { id: 7, img: `${process.env.PUBLIC_URL}/images/g.JPG`, stat: '', clicked: false },
-    // { id: 7, img: `${process.env.PUBLIC_URL}/images/g.JPG`, stat: '', clicked: false },
-    // { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
-    // { id: 8, img: `${process.env.PUBLIC_URL}/images/h.JPG`, stat: '', clicked: false },
   ].sort(() => Math.random() - 0.5));
 
   const dispatch = useDispatch<any>();
