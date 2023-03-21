@@ -88,10 +88,7 @@ export default function Menu({ open, onDrawerClose }: MenuProp) {
         { to: "/score", icon: <ScoreIcon />, text: "ข้อมูลคะแนน" },
       ];
     }
-
-
   };
-
 
   return (
     <Drawer
